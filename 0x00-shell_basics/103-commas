@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | paste -sd "," - | sed 's/ ,/, /g' | sed 's/, \.\./,../'
+ls -map 
