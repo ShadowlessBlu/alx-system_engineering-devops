@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -map
+ls -Ap | tr '\n' ', ' | sed 's/,$/\n/'
