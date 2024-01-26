@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Prints the content of the current directory in a list format
+
+for file in *  # all file in current dir
+do
+    filename=$(echo "$file" | cut -d '-' -f 2-)
+    echo "$filename"
+done

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script displays "Best School" 10 times the counter goes until 10
+
+counter=0
+
+until ((counter == 10))
+do
+    echo "Best School"
+    ((counter++))
+done
