@@ -15,7 +15,7 @@ do
     then
         echo "Buzz"
     else
-        echo "$num"
+        echo "$cn"
     fi
     (( cn++ ))
 done
