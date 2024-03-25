@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Create an RSA key pair with name school password betty and bytes==4096
+ssh-keygen -b 4096 -f school -N betty
