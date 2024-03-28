@@ -1,18 +1,8 @@
 #!/usr/bin/env bash
+# installs nginx and configures it on a remote server
 
-# Install Nginx with the -y flag to automatically confirm installation
-apt-get update
-apt-get install -y nginx
-
-# Modify the default Nginx configuration to listen on port 80
-sed -i 's/listen 80 default_server;/listen 80;/g' /etc/nginx/sites-available/default
-
-# Restart Nginx (without using systemctl)
-/etc/init.d/nginx restart
-
-# Create a simple HTML file containing "Hello World!"
-echo "<!DOCTYPE html><html><body><h1>Hello World!</h1></body></html>" > /var/www/html/index.html
-
-# Output success message
-echo "Nginx installed and configured successfully."
-
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
+service nginx start
