@@ -1,8 +1,9 @@
 # SSH client configuration
 
 # Default options
-Host *
-    # Specify the private key for authentication
-    IdentityFile ~/.ssh/school
+Host 100.26.249.145
+    # Specify the absolute path to the private key for authentication
+    IdentityFile /home/calvin/.ssh/school
     # Disable password authentication
     PasswordAuthentication no
+
