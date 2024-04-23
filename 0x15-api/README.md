@@ -15,7 +15,6 @@ to export it to either CSV or JSON format.
 * **1. Export to CSV**
   * [1-export_to_CSV.py](./1-export_to_CSV.py): Python script exports to-do list
   information of a given employee ID to CSV format.
-  * Usage: `python3 1-export_to_CSV.py <employee ID>`
   * File name: `<user id>.csv`.
   * Format: `"<user id>","<username>","<task completed status>","<task title>"`.
 
@@ -23,7 +22,6 @@ to export it to either CSV or JSON format.
   * [2-export_to_JSON.py](./2-export_to_JSON.py): Python script that exports
   to-do list information of a given employee ID to JSON format.
   * Usage: `python3 2-export_to_JSON.py <employee ID>`
-  * File name: `<user id>.json`
   * Format: `{ "<user id>": [ {"task": "<task title>", "completed": <task completed status>, "username": "<username>"}}, ... ]}`
 
 * **3. Dictionary of list of dictionaries**
